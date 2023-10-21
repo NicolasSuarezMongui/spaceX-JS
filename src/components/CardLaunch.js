@@ -4,7 +4,7 @@ export const CardLaunch = (id, img, success, flightNumber, details) => {
     // principal tag
     const elementA = document.createElement('a')
     elementA.classList.add(...clsA)
-    elementA.href = "/launch.html"
+    elementA.href = "./launch.html"
     // success text
     const sucessText = success ? "Éxito" : "Fracaso"
 
@@ -13,7 +13,7 @@ export const CardLaunch = (id, img, success, flightNumber, details) => {
 
 
     elementA.addEventListener('click',()=>{
-        localStorage.setItem('idLauch',id)
+        localStorage.setItem('idLaunch',id)
     })
 
     return elementA
